@@ -1,7 +1,7 @@
 ---
 title: "Business Intelligence Project"
-author: "<Specify your name here>"
-date: "<Specify the date when you submitted the lab>"
+author: "<Tom Arnold Owiti>"
+date: "<10/09/2023>"
 output:
   github_document: 
     toc: yes
@@ -17,9 +17,9 @@ editor_options:
 
 |                                              |     |
 |----------------------------------------------|-----|
-| **Student ID Number**                        | ... |
-| **Student Name**                             | ... |
-| **BBIT 4.2 Group**                           | ... |
+| **Student ID Number**                        | 135203 |
+| **Student Name**                             | Tom Arnold Owiti |
+| **BBIT 4.2 Group**                           | C |
 | **BI Project Group Name/ID (if applicable)** | ... |
 
 # Setup Chunk
@@ -42,16 +42,17 @@ knitr::opts_chunk$set(
 
 ### Source:
 
-The dataset that was used can be downloaded here: *\<provide a link\>*
+The dataset that was used can be downloaded here: *\<https://www.kaggle.com/datasets/shivamb/government-procurement-dataset\>*
 
 ### Reference:
 
-*\<Cite the dataset here using APA\>\
+*\<Kaggle. (n.d.). Government Procurement Dataset. Kaggle\>\
 Refer to the APA 7th edition manual for rules on how to cite datasets: <https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references>*
 
 ```{r Dataset Loader}
 library(readr)
-
+government_procurement_via_gebiz <- read_csv("~/archive (2)/government-procurement-via-gebiz.csv")
+View(government_procurement_via_gebiz)
 # Provide the executable R code inside the various code chunks as guided by the lab work.
 ```
 

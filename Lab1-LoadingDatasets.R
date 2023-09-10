@@ -4,10 +4,10 @@
 # Course Code: BBT4206
 # Course Name: Business Intelligence II
 # Semester Duration: 21st August 2023 to 28th November 2023
-#
+# 
 # Lecturer: Allan Omondi
 # Contact: aomondi [at] strathmore.edu
-#
+# 
 # Note: The lecture contains both theory and practice. This file forms part of
 #       the practice. It has required lab work submissions that are graded for
 #       coursework marks.
@@ -19,7 +19,7 @@
 # 1. Sources of Datasets ----
 # There are several repositories where you can find datasets (mostly free) for
 # learning and/or to use as part of a project. These include:
-
+ 
 # 1.	Data in Brief Journal: https://www.sciencedirect.com/journal/data-in-brief
 # 2.	University of California (UC) Irvine: https://archive.ics.uci.edu/datasets
 # 3.	Kaggle: https://www.kaggle.com/datasets
@@ -340,7 +340,7 @@ churn_dateset <- read_csv(
                                   "1"))
   )
 )
-
+ 
 # References ----
 # Refer to the APA 7th edition manual for rules on how to cite datasets:
 # https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references  # nolint: line_length_linter.
@@ -357,12 +357,14 @@ churn_dateset <- read_csv(
 ## Part A ----
 # Specify the code you have used to load your own dataset for the BI Project
 # here:
-
+library(readr)
+government_procurement_via_gebiz <- read_csv("~/archive (2)/government-procurement-via-gebiz.csv")
+View(government_procurement_via_gebiz)
 ## Part B ----
 # Upload *the link* to your "Lab1-LoadingDatasets.R" hosted on Github (do not
 # upload the .R file itself) through the submission link provided on
 # eLearning.
-
+ 
 ## Part C ----
 # Create a markdown file called "BIProject.Rmd" and place it inside the folder
 # called "markdown". The markdown should have a code chunk that explains how
