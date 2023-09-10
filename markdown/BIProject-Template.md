@@ -1,7 +1,7 @@
 Business Intelligence Project
 ================
-<Specify your name here>
-<Specify the date when you submitted the lab>
+<Tom Arnold Owiti>
+\<10/09/2023\>
 
 - [Student Details](#student-details)
 - [Setup Chunk](#setup-chunk)
@@ -13,12 +13,12 @@ Business Intelligence Project
 
 # Student Details
 
-|                                              |     |
-|----------------------------------------------|-----|
-| **Student ID Number**                        | …   |
-| **Student Name**                             | …   |
-| **BBIT 4.2 Group**                           | …   |
-| **BI Project Group Name/ID (if applicable)** | …   |
+|                                              |                  |
+|----------------------------------------------|------------------|
+| **Student ID Number**                        | 135203           |
+| **Student Name**                             | Tom Arnold Owiti |
+| **BBIT 4.2 Group**                           | C                |
+| **BI Project Group Name/ID (if applicable)** | …                |
 
 # Setup Chunk
 
@@ -36,17 +36,32 @@ here <https://yihui.org/knitr/options/>.
 
 ### Source:
 
-The dataset that was used can be downloaded here: *\<provide a link\>*
+The dataset that was used can be downloaded here: *\<<a
+href="https://www.kaggle.com/datasets/shivamb/government-procurement-dataset\"
+class="uri">https://www.kaggle.com/datasets/shivamb/government-procurement-dataset\</a>\>*
 
 ### Reference:
 
-*\<Cite the dataset here using APA\>  
+*\<Kaggle. (n.d.). Government Procurement Dataset. Kaggle\>  
 Refer to the APA 7th edition manual for rules on how to cite datasets:
 <https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references>*
 
 ``` r
 library(readr)
+government_procurement_via_gebiz <- read_csv("~/archive (2)/government-procurement-via-gebiz.csv")
+```
 
+    ## Rows: 32756 Columns: 7
+    ## ── Column specification ────────────────────────────────────────────────────────
+    ## Delimiter: ","
+    ## chr (6): tender_no., tender_description, agency, award_date, tender_detail_s...
+    ## dbl (1): awarded_amt
+    ## 
+    ## ℹ Use `spec()` to retrieve the full column specification for this data.
+    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+``` r
+View(government_procurement_via_gebiz)
 # Provide the executable R code inside the various code chunks as guided by the lab work.
 ```
 
